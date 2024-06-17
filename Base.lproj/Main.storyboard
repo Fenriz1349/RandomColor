@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LYM-Nh-n00">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Kbc-kb-Y1f">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ColorCell" id="Kbc-kb-Y1f">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kbc-kb-Y1f" id="3I7-uZ-mdd">
@@ -38,16 +38,14 @@
                         <viewLayoutGuide key="safeArea" id="Plo-FQ-nj5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="LYM-Nh-n00" firstAttribute="leading" secondItem="Plo-FQ-nj5" secondAttribute="leading" id="9yH-P5-H7l"/>
-                            <constraint firstItem="LYM-Nh-n00" firstAttribute="trailing" secondItem="Plo-FQ-nj5" secondAttribute="trailing" id="A1T-T5-9C3"/>
-                            <constraint firstAttribute="bottom" secondItem="LYM-Nh-n00" secondAttribute="bottom" id="NzV-2x-811"/>
-                            <constraint firstItem="Plo-FQ-nj5" firstAttribute="trailing" secondItem="LYM-Nh-n00" secondAttribute="trailing" id="SsG-xe-x67"/>
-                            <constraint firstItem="LYM-Nh-n00" firstAttribute="leading" secondItem="Plo-FQ-nj5" secondAttribute="leading" id="f7u-Cj-0Ff"/>
-                            <constraint firstItem="LYM-Nh-n00" firstAttribute="top" secondItem="Plo-FQ-nj5" secondAttribute="top" id="i9r-hj-oDt"/>
-                            <constraint firstItem="LYM-Nh-n00" firstAttribute="top" secondItem="Plo-FQ-nj5" secondAttribute="top" id="p1l-7L-CZg"/>
+                            <constraint firstItem="LYM-Nh-n00" firstAttribute="bottom" secondItem="Plo-FQ-nj5" secondAttribute="bottom" id="0dk-Dg-rBF"/>
+                            <constraint firstItem="LYM-Nh-n00" firstAttribute="leading" secondItem="mJU-ar-8RR" secondAttribute="leading" id="60e-00-qhR"/>
+                            <constraint firstItem="LYM-Nh-n00" firstAttribute="top" secondItem="mJU-ar-8RR" secondAttribute="top" id="Zxm-Ex-y43"/>
+                            <constraint firstAttribute="bottom" secondItem="LYM-Nh-n00" secondAttribute="bottom" id="ogw-Vy-FgX"/>
+                            <constraint firstAttribute="trailing" secondItem="LYM-Nh-n00" secondAttribute="trailing" id="tfn-gR-JSI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Colors" id="wZ2-Sm-ExM" userLabel="Colors"/>
+                    <navigationItem key="navigationItem" title="Colors" largeTitleDisplayMode="always" id="wZ2-Sm-ExM" userLabel="Colors"/>
                     <connections>
                         <segue destination="2ae-W6-pcg" kind="show" identifier="ToColorDetailVC" id="kxK-0v-k0H"/>
                     </connections>
